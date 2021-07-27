@@ -900,9 +900,9 @@ Game.Launch=function()
 		if (Game.beta) Game.SaveTo='CookieClickerGameBeta';
 		l('versionNumber').innerHTML='v. '+Game.version+(Game.beta?' <span style="color:#ff0;">beta</span>':'');
 		
-		if (Game.beta) {var me=l('linkVersionBeta');me.parentNode.removeChild(me);}
-		else if (Game.version==1.0466) {var me=l('linkVersionOld');me.parentNode.removeChild(me);}
-		else {var me=l('linkVersionLive');me.parentNode.removeChild(me);}
+		//if (Game.beta) {var me=l('linkVersionBeta');me.parentNode.removeChild(me);}
+		//else if (Game.version==1.0466) {var me=l('linkVersionOld');me.parentNode.removeChild(me);}
+		//else {var me=l('linkVersionLive');me.parentNode.removeChild(me);}
 
 		//l('links').innerHTML=(Game.beta?'<a href="../" target="blank">Live version</a> | ':'<a href="beta" target="blank">Try the beta!</a> | ')+'<a href="http://orteil.dashnet.org/experiments/cookie/" target="blank">Classic</a>';
 		//l('links').innerHTML='<a href="http://orteil.dashnet.org/experiments/cookie/" target="blank">Cookie Clicker Classic</a>';
@@ -11597,8 +11597,24 @@ window.onload=function()
 		else
 		{
 			Game.Load();
-			//try {Game.Load();}
-			//catch(err) {console.log('ERROR : '+err.message);}
+			try {Game.Load();}
+			catch(err) {console.log('ERROR : '+err.message);}
 		}
 	}
 };
+
+Game.MakeCookieConsent=function()
+{
+javascript:document.cookie="cookieconsent_dismissed=yes"
+}
+
+Game.Infinity=function()
+{
+Game.Achievements['Cheated cookies taste awful'].won=1;
+Game.Earn(Infinity)
+Game.addClass('lumpsOn')
+Game.gainLumps(Infinity)
+Game.Objects['Temple'].minigame.swaps = Infinity;
+Game.Objects['Wizard tower'].level = Infinity
+Game.Objects['Wizard tower'].minigame.magic = Infinity;
+}
