@@ -1,2 +1,1 @@
-# aj16789.github.io   
-link
+# aj16789.github.io
