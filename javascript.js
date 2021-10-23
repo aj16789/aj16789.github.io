@@ -1,13 +1,14 @@
 console.log('Start JS File'); /* Start */
 
 function cmds(){
-console.log('------------------------------------------');
-console.log('-CMDS:                                   -');
-console.log('------------------------------------------');
-console.log('-dateandtime(); : Give The Date And Time.-');
-console.log('-cmds(); : Print This List.              -');
-console.log('------------------------------------------');
+	console.log('------------------------------------------');
+	console.log('-CMDS:                                   -');
+	console.log('------------------------------------------');
+	console.log('-dateandtime(); : Give The Date And Time.-');
+	console.log('-cmds(); : Print This List.              -');
+	console.log('------------------------------------------');
 }
+cmds();
 
 console.log('Hello, World!'); /* Hello! */
 
