@@ -7,4 +7,10 @@ function dateandtime(){
 	var dateTime = date+' '+time;
 	console.log(dateTime);
 }
+
 dateandtime();
+
+console.log('---------------------------------------');
+console.log('CMDS:                                  ');
+console.log('dateandtime(); : Give The Date And Time');
+console.log('---------------------------------------');
