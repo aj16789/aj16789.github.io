@@ -1,4 +1,15 @@
-console.log('Hello, World!');
+console.log('Start JS File'); /* Start */
+
+function cmds(){
+console.log('------------------------------------------');
+console.log('-CMDS:                                   -');
+console.log('------------------------------------------');
+console.log('-dateandtime(); : Give The Date And Time.-');
+console.log('-cmds(); : Print This List.              -');
+console.log('------------------------------------------');
+}
+
+console.log('Hello, World!'); /* Hello! */
 
 function dateandtime(){
 	var today = new Date();
@@ -7,10 +18,6 @@ function dateandtime(){
 	var dateTime = date+' '+time;
 	console.log(dateTime);
 }
-
 dateandtime();
 
-console.log('---------------------------------------');
-console.log('CMDS:                                  ');
-console.log('dateandtime(); : Give The Date And Time');
-console.log('---------------------------------------');
+console.log('End JS File'); /* End */
