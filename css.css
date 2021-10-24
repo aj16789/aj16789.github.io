@@ -1,0 +1,10 @@
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
