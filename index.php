@@ -5,7 +5,7 @@
     <link rel="shortcut icon" href="./favicon.ico">
     <script src="./javascript.js"></script>
     <script src="./style.css"></script>
-	<?php include('php.php'); ?>
+	<?php include('hypertextPreprocessor.php'); ?>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <!--https://www.srihash.org/-->
 	<meta name="author" content="TheEndBoss_101">
 	<meta name="description" content="TheEndBoss_101's HomePage">
